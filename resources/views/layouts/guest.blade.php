@@ -15,7 +15,7 @@
     </head>
     <body class="">
         <div class="@guest guest-header @endguest ">
-            @include('admin.partials.header')
+            @include('partials.header')
         </div>
         @yield('content')
     </body>

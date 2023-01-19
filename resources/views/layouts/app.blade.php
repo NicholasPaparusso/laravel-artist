@@ -32,7 +32,7 @@
                         </div>
                 </div>
                 <div class="col-11 header-style ">
-                    @include('admin.partials.header')
+                    @include('partials.header')
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="row">
             @auth
             <div class="col-1 aside">
-                @include('admin.partials.aside')
+                @include('partials.aside')
             </div>
             @endauth
             <div class="col @auth col-11  @endauth  main">
