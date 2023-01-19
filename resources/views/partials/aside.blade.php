@@ -8,8 +8,8 @@
             </li>
 
             <li>
-                <a class="aside-link" href="">
-                     <i class="fa-solid fa-newspaper"></i> Projects
+                <a class="aside-link" href="{{route('admin.artists.index')}}">
+                     <i class="fa-solid fa-newspaper"></i> Artists
                 </a>
             </li>
 
