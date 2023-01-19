@@ -15,7 +15,7 @@ class MuseumsController extends Controller
      */
     public function index()
     {
-        //
+        return view('museum.index');
     }
 
     /**
