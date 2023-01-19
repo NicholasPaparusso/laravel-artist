@@ -18,6 +18,11 @@
                     <i class="fa-solid fa-file-circle-plus"></i> new Project
                 </a>
             </li>
+            <li>
+                <a class="aside-link" href="{{route('admin.museums.index')}}">
+                    <i class="fa-solid fa-file-circle-plus"></i> Museum
+                </a>
+            </li>
 
 
         </ul>

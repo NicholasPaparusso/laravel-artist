@@ -15,7 +15,8 @@ class MuseumsController extends Controller
      */
     public function index()
     {
-        return view('museum.index');
+        $museums = Museums::paginate(10);
+        return view('museum.index', compact('museums'));
     }
 
     /**

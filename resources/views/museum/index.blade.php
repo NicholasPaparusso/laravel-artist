@@ -2,35 +2,36 @@
 
 @section('content')
     <h1>index</h1>
-    {{-- <div class="container">
+    <div class="container">
 
-        @if (session('deleted'))
+        {{-- @if (session('deleted'))
             <div class="alert alert-info" role="alert">
                 {!! session('deleted') !!}
             </div>
-        @endif
-        <table class="table table-striped">
+        @endif --}}
+
+        <table class="table table-striped bg-light">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Titolo</th>
-                    <th scope="col">Tipo</th>
+                    <th scope="col">name</th>
+                    <th scope="col">nation</th>
                     <th scope="col">Azioni</th>
                 </tr>
             </thead>
             <tbody>
-                @forelse ($comics as $comic)
+                @forelse ($museums as $museum)
                     <tr>
-                        <td>xxx</td>
-                        <td>xxx</td>
-                        <td>xxx</td>
+                        <td>{{ $museum->id }}</td>
+                        <td>{{ $museum->name }}</td>
+                        <td>{{ $museum->nation }}</td>
                         <td>
-                            <a class="btn btn-primary" href="{{ route('comics.show', $comic) }}" title="show"><i
+                            <a class="btn btn-primary" href="XXXXXXXXXXXXXXXXXXXXXXXXX" title="show"><i
                                     class="fa-regular fa-eye"></i></a>
-                            <a class="btn btn-warning " href="{{ route('comics.edit', $comic) }}" title="edit"><i
+                            <a class="btn btn-warning " href="XXXXXXXXXXXXXXXXXXXX" title="edit"><i
                                     class="fa-solid fa-pencil"></i></a>
-                            <form action="{{ route('comics.destroy', $comic) }}"
-                                onsubmit="return confirm('Confermi l\'eliminazione di : {{ $comic->title }}')"
+                            <form action="XXXXXXXXXXXXXXXXXXX"
+                                onsubmit="return confirm('Confermi l\'eliminazione di : {{ $museum->name }}')"
                                 class="d-inline" method="POST">
                                 @csrf
                                 @method('DELETE')
@@ -47,10 +48,10 @@
 
             </tbody>
         </table>
-        {{ $comics->links() }}
+        {{ $museums->links() }}
         <div>
-            <a class="btn btn-success" href="{{ route('comics.create') }}">Crea un nuovo comic</a>
+            <a class="btn btn-success" href="#">Crea un nuovo comic</a>
         </div>
     </div>
---}}
+
 @endsection
